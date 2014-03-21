@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppsListViewController.h
 //  TopPaidApps
 //
 //  Created by Stefan Ogonek on 20/03/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AppsListViewController : UIViewController
 
 @end

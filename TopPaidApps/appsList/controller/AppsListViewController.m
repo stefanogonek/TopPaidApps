@@ -10,10 +10,8 @@
 #import "AppsFetcher.h"
 #import "AppCell.h"
 
-@interface AppsListViewController ()<UITableViewDataSource, UITableViewDelegate,
-                                     AppsFetcherDelegate, AppCellDelegate>
+@interface AppsListViewController ()<AppsFetcherDelegate, AppCellDelegate>
 
-@property(nonatomic, retain) IBOutlet UITableView *tableView;
 @property(nonatomic, retain) AppsFetcher *appsFetcher;
 @property(nonatomic, retain) NSArray *appsList;
 
@@ -26,18 +24,31 @@
     _appsFetcher.delegate = nil;
     [_appsFetcher release];
     [_appsList release];
-    [_tableView release];
     [super dealloc];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self addRefreshControl];
+    [self fetchAppsList];
+}
+
+- (void)addRefreshControl
+{
+    UIRefreshControl *refreshControl = [[[UIRefreshControl alloc] init] autorelease];
+    [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+}
+
+- (void)refresh
+{
     [self fetchAppsList];
 }
 
 - (void)fetchAppsList
 {
+    self.appsFetcher.delegate = nil;
     self.appsFetcher = [AppsFetcher appsFetcher];
     self.appsFetcher.delegate = self;
     [self.appsFetcher start];
@@ -75,6 +86,7 @@
 {
     self.appsList = appsList;
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
 }
 
 - (void)fetcherFailedWithError:(NSError *)error

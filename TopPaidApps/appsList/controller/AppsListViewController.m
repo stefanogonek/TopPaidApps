@@ -10,7 +10,8 @@
 #import "AppsFetcher.h"
 #import "AppCell.h"
 
-@interface AppsListViewController ()<UITableViewDataSource, UITableViewDelegate, AppsFetcherDelegate>
+@interface AppsListViewController ()<UITableViewDataSource, UITableViewDelegate,
+                                     AppsFetcherDelegate, AppCellDelegate>
 
 @property(nonatomic, retain) IBOutlet UITableView *tableView;
 @property(nonatomic, retain) AppsFetcher *appsFetcher;
@@ -62,6 +63,7 @@
     AppCell *appCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!appCell) {
         appCell = [AppCell appCellWithReuseIdentifier:cellIdentifier];
+        appCell.delegate = self;
     }
     [appCell configureWithAppItem:self.appsList[indexPath.row] atRow:indexPath.row];
     return appCell;
@@ -78,6 +80,13 @@
 - (void)fetcherFailedWithError:(NSError *)error
 {
     //TODO: display alert
+}
+
+#pragma mark AppCellDelegate
+
+- (void)appCellNeedsRefresh:(AppCell *)appCell
+{
+    [self.tableView reloadData];
 }
 
 

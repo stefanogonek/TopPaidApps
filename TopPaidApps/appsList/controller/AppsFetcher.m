@@ -6,6 +6,8 @@
 #import "AppsFetcher.h"
 #import "Parser.h"
 
+static NSTimeInterval kTimeoutInterval = 30;
+
 @interface AppsFetcher()
 
 @end
@@ -22,7 +24,7 @@
     NSURL *url = [NSURL URLWithString:@"https://itunes.apple.com/us/rss/toppaidapplications/limit=100/json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url
                                              cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                         timeoutInterval:30];
+                                         timeoutInterval:kTimeoutInterval];
 
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
@@ -39,10 +41,10 @@
 
 - (void)processFetchedData:(NSData *)data
 {
-    NSError *error = nil;
+    NSError *error;
     Parser *parser = [Parser parserWithJsonData:data];
     NSArray *appsList = [parser parse:&error];
-    if (error) {
+    if (!appsList) {
         [self informDelegateAboutError:error];
         return;
     }

@@ -6,9 +6,18 @@
 #import <Foundation/Foundation.h>
 
 @class AppItem;
+@class AppCell;
 
+@protocol AppCellDelegate
+
+- (void)appCellNeedsRefresh:(AppCell*)appCell;
+
+@end
 
 @interface AppCell : UITableViewCell
+
+@property(nonatomic, assign) id<AppCellDelegate>delegate;
+@property(nonatomic, assign) NSInteger currentRow;
 
 + (instancetype)appCellWithReuseIdentifier:(NSString *)reuseIdentifier;
 

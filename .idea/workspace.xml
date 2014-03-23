@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b19b499-b048-4bb3-a1f9-9f70c0a9cc15" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/utils/UIImage+Utils.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopPaidApps/utils/UIImage+Utils.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.h" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.m" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.h" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.m" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps.xcodeproj/xcuserdata/steve.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/TopPaidApps.xcodeproj/xcuserdata/steve.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.m" afterPath="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopPaidApps.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/TopPaidApps.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -38,83 +41,7 @@
       <file leaf-file-name="AppsListViewController.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppCell.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSURLConnection.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLConnection.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="418" column="8" selection-start="19319" selection-end="19319" vertical-scroll-proportion="0.0" vertical-offset="5950" max-vertical-offset="6552">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSURLRequest.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="4" selection-start="4206" selection-end="4206" vertical-scroll-proportion="0.0" vertical-offset="1282" max-vertical-offset="8442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppsFetcher.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="60" selection-start="635" selection-end="635" vertical-scroll-proportion="0.24242425" vertical-offset="280" max-vertical-offset="966">
-              <folding>
-                <element signature="e#106#129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSData.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="16" selection-start="3793" selection-end="3793" vertical-scroll-proportion="0.0" vertical-offset="946" max-vertical-offset="2940">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppCell.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="518">
-              <folding>
-                <element signature="e#106#125#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppsListViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="1232">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parser.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
               <folding />
             </state>
           </provider>
@@ -123,9 +50,89 @@
       <file leaf-file-name="Parser.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="4" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0" vertical-offset="745" max-vertical-offset="1456">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="926" max-vertical-offset="1414">
               <folding>
                 <element signature="e#106#124#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="294">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppsListViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="58" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1358">
+              <folding>
+                <marker date="1395607711000" expanded="true" signature="603:2095" placeholder="..." />
+                <marker date="1395607711000" expanded="true" signature="1365:1738" placeholder="{...}" />
+                <marker date="1395607711000" expanded="true" signature="1832:1898" placeholder="{...}" />
+                <marker date="1395607711000" expanded="true" signature="1948:1977" placeholder="{...}" />
+                <marker date="1395607711000" expanded="true" signature="2056:2092" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageDownloadOperation.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="19" selection-start="381" selection-end="381" vertical-scroll-proportion="0.4694737" vertical-offset="43" max-vertical-offset="1022">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageDownloadOperation.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppItem.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppItem.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSURLRequest.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="210" column="6" selection-start="8393" selection-end="8393" vertical-scroll-proportion="0.0" vertical-offset="2768" max-vertical-offset="8442">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppsFetcher.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="966">
+              <folding>
+                <element signature="e#106#129#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,15 +158,19 @@
       <list>
         <option value="$PROJECT_DIR$/TopPaidApps/ViewController.m" />
         <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/ViewController.m" />
-        <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.h" />
-        <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h" />
         <option value="$PROJECT_DIR$/TopPaidApps/appsList/model/AppEntry.m" />
         <option value="$PROJECT_DIR$/TopPaidApps/appsList/model/AppEntry.h" />
         <option value="$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.h" />
-        <option value="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.h" />
-        <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m" />
         <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.m" />
+        <option value="$PROJECT_DIR$/TopPaidApps/utils/UIImage+Utils.h" />
+        <option value="$PROJECT_DIR$/TopPaidApps/utils/UIImage+Utils.m" />
+        <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m" />
+        <option value="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.h" />
+        <option value="$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.m" />
+        <option value="$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.h" />
         <option value="$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.m" />
+        <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.h" />
+        <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h" />
         <option value="$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.m" />
       </list>
     </option>
@@ -235,7 +246,29 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TopPaidApps" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TopPaidApps" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="appsList" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,6 +304,28 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="TopPaidApps" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appsList" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TopPaidApps" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Products" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
@@ -283,7 +338,7 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TopPaidApps/appsList/view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TopPaidApps/utils" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="TopPaidApps" />
   </component>
@@ -340,9 +395,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.539028" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24005891" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.460972" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.7599411" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -365,124 +420,130 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSJSONSerialization.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="13" selection-start="8150" selection-end="8150" vertical-scroll-proportion="0.0" vertical-offset="1608" max-vertical-offset="5656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="406">
+        <state line="302" column="40" selection-start="20959" selection-end="20959" vertical-scroll-proportion="0.0" vertical-offset="3809" max-vertical-offset="4284">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="308">
+        <state line="18" column="46" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="434">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.h">
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
+        <state line="19" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="406">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h">
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/utils/UIImage+Utils.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="280">
+        <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.m">
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/utils/UIImage+Utils.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="4" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0" vertical-offset="745" max-vertical-offset="1456">
-          <folding>
-            <element signature="e#106#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="16" selection-start="3793" selection-end="3793" vertical-scroll-proportion="0.0" vertical-offset="946" max-vertical-offset="2940">
+        <state line="20" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/AppCell.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="518">
-          <folding>
-            <element signature="e#106#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="418" column="8" selection-start="19319" selection-end="19319" vertical-scroll-proportion="0.0" vertical-offset="5950" max-vertical-offset="6552">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1232">
+        <state line="27" column="0" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1330">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="4" selection-start="4206" selection-end="4206" vertical-scroll-proportion="0.0" vertical-offset="1282" max-vertical-offset="8442">
+        <state line="210" column="6" selection-start="8393" selection-end="8393" vertical-scroll-proportion="0.0" vertical-offset="2768" max-vertical-offset="8442">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsFetcher.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="635" selection-end="635" vertical-scroll-proportion="0.24242425" vertical-offset="280" max-vertical-offset="966">
+        <state line="27" column="0" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="966">
           <folding>
             <element signature="e#106#129#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/AppsListViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="58" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1358">
+          <folding>
+            <marker date="1395607711000" expanded="true" signature="603:2095" placeholder="..." />
+            <marker date="1395607711000" expanded="true" signature="1365:1738" placeholder="{...}" />
+            <marker date="1395607711000" expanded="true" signature="1832:1898" placeholder="{...}" />
+            <marker date="1395607711000" expanded="true" signature="1948:1977" placeholder="{...}" />
+            <marker date="1395607711000" expanded="true" signature="2056:2092" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/controller/Parser.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1414">
+          <folding>
+            <element signature="e#106#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/model/AppItem.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopPaidApps/appsList/view/ImageDownloadOperation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="19" selection-start="381" selection-end="381" vertical-scroll-proportion="0.4694737" vertical-offset="43" max-vertical-offset="1022">
+          <folding />
         </state>
       </provider>
     </entry>

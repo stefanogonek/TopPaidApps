@@ -37,15 +37,12 @@
 
 - (NSArray *)parse:(NSError **)pError
 {
-    NSError *error = nil;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:self.jsonData
                                                              options:0
-                                                               error:&error];
-    if (error) {
-        *pError = error;
+                                                               error:pError];
+    if (!jsonDict) {
         return nil;
     }
-
     NSArray *appsList = [self convertJsonDictToAppEntries:jsonDict];
     return appsList;
 }

@@ -5,12 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
+@interface UIImage (Utils)
 
-@interface Parser : NSObject
-
-+ (instancetype)parserWithJsonData:(NSData *)data;
-
-- (NSArray *)parse:(NSError **)pError;
-
+- (UIImage *)scaleToSize:(CGSize)size;
 
 @end

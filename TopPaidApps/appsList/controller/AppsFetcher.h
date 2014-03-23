@@ -17,8 +17,8 @@
 
 @property(nonatomic, assign) id<AppsFetcherDelegate> delegate;
 
-- (void)start;
-
 + (instancetype)appsFetcher;
+
+- (void)start;
 
 @end

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68AD32D834089BF8C99A5435 /* AppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AD3DE257BE3464AF21CE55 /* AppItem.m */; };
 		68AD3401412D9D4FFC76CF15 /* AppsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AD3505F4EF2FA94C65F48D /* AppsListViewController.m */; };
+		68AD34D9778D3D949437A5B8 /* AppsFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AD39A03F27A517BB773D47 /* AppsFetcher.m */; };
+		68AD3D089AED444300020597 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AD3253E79AA80835CAF241 /* Parser.m */; };
+		68AD3F38FF41AEA68D2928DF /* AppCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AD38C26646FBEF068DC168 /* AppCell.m */; };
 		AACA83E518DB646800F27F07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACA83E418DB646800F27F07 /* Foundation.framework */; };
 		AACA83E718DB646800F27F07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACA83E618DB646800F27F07 /* CoreGraphics.framework */; };
 		AACA83E918DB646800F27F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACA83E818DB646800F27F07 /* UIKit.framework */; };
@@ -35,7 +39,15 @@
 
 /* Begin PBXFileReference section */
 		68AD316586466E73E7B63EF9 /* AppsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsListViewController.h; sourceTree = "<group>"; };
+		68AD3253E79AA80835CAF241 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		68AD33A491CA54E831603FDD /* AppsFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsFetcher.h; sourceTree = "<group>"; };
 		68AD3505F4EF2FA94C65F48D /* AppsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsListViewController.m; sourceTree = "<group>"; };
+		68AD3713CF620F31D654F23A /* AppItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppItem.h; sourceTree = "<group>"; };
+		68AD38C26646FBEF068DC168 /* AppCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppCell.m; path = TopPaidApps/appsList/view/AppCell.m; sourceTree = SOURCE_ROOT; };
+		68AD39A03F27A517BB773D47 /* AppsFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsFetcher.m; sourceTree = "<group>"; };
+		68AD3D2B3784C37B5250EA42 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		68AD3DE257BE3464AF21CE55 /* AppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppItem.m; sourceTree = "<group>"; };
+		68AD3F125FCF30579CD91BEB /* AppCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppCell.h; path = TopPaidApps/appsList/view/AppCell.h; sourceTree = SOURCE_ROOT; };
 		AACA83E118DB646800F27F07 /* TopPaidApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPaidApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACA83E418DB646800F27F07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AACA83E618DB646800F27F07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,11 +91,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68AD345514A6CDD8E222A81E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		68AD368A49018C047773816B /* controller */ = {
 			isa = PBXGroup;
 			children = (
 				68AD3505F4EF2FA94C65F48D /* AppsListViewController.m */,
 				68AD316586466E73E7B63EF9 /* AppsListViewController.h */,
+				68AD39A03F27A517BB773D47 /* AppsFetcher.m */,
+				68AD33A491CA54E831603FDD /* AppsFetcher.h */,
+				68AD3253E79AA80835CAF241 /* Parser.m */,
+				68AD3D2B3784C37B5250EA42 /* Parser.h */,
+				68AD38C26646FBEF068DC168 /* AppCell.m */,
+				68AD3F125FCF30579CD91BEB /* AppCell.h */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -92,8 +117,19 @@
 			isa = PBXGroup;
 			children = (
 				68AD368A49018C047773816B /* controller */,
+				68AD3AB29E313DDC4FD8199B /* model */,
+				68AD345514A6CDD8E222A81E /* view */,
 			);
 			path = appsList;
+			sourceTree = "<group>";
+		};
+		68AD3AB29E313DDC4FD8199B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				68AD3DE257BE3464AF21CE55 /* AppItem.m */,
+				68AD3713CF620F31D654F23A /* AppItem.h */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		AACA83D818DB646800F27F07 = {
@@ -268,6 +304,10 @@
 				AACA83F518DB646800F27F07 /* AppDelegate.m in Sources */,
 				AACA83F118DB646800F27F07 /* main.m in Sources */,
 				68AD3401412D9D4FFC76CF15 /* AppsListViewController.m in Sources */,
+				68AD32D834089BF8C99A5435 /* AppItem.m in Sources */,
+				68AD34D9778D3D949437A5B8 /* AppsFetcher.m in Sources */,
+				68AD3D089AED444300020597 /* Parser.m in Sources */,
+				68AD3F38FF41AEA68D2928DF /* AppCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

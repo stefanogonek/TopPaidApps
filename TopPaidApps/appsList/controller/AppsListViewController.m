@@ -7,10 +7,14 @@
 //
 
 #import "AppsListViewController.h"
+#import "AppsFetcher.h"
+#import "AppCell.h"
 
-@interface AppsListViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface AppsListViewController ()<UITableViewDataSource, UITableViewDelegate, AppsFetcherDelegate>
 
 @property(nonatomic, retain) IBOutlet UITableView *tableView;
+@property(nonatomic, retain) AppsFetcher *appsFetcher;
+@property(nonatomic, retain) NSArray *appsList;
 
 @end
 
@@ -18,6 +22,9 @@
 
 - (void)dealloc
 {
+    _appsFetcher.delegate = nil;
+    [_appsFetcher release];
+    [_appsList release];
     [_tableView release];
     [super dealloc];
 }
@@ -25,6 +32,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self fetchAppsList];
+}
+
+- (void)fetchAppsList
+{
+    self.appsFetcher = [AppsFetcher appsFetcher];
+    self.appsFetcher.delegate = self;
+    [self.appsFetcher start];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -38,15 +53,32 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.appsList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    static NSString *cellIdentifier = @"AppCell";
+    AppCell *appCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!appCell) {
+        appCell = [AppCell appCellWithReuseIdentifier:cellIdentifier];
+    }
+    [appCell configureWithAppItem:self.appsList[indexPath.row] atRow:indexPath.row];
+    return appCell;
 }
 
+#pragma mark - AppsFetcherDelegate
 
-#pragma mark - UITableViewDelegate
+- (void)fetcherReturnedWithAppsList:(NSArray *)appsList
+{
+    self.appsList = appsList;
+    [self.tableView reloadData];
+}
+
+- (void)fetcherFailedWithError:(NSError *)error
+{
+    //TODO: display alert
+}
+
 
 @end

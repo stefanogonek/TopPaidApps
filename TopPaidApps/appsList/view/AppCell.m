@@ -47,9 +47,9 @@ static NSInteger kImageSize = 36;
 }
 
 
-- (void)configureWithAppItem:(AppItem *)appItem atRow:(NSInteger)row
+- (void)configureWithAppItem:(AppItem *)appItem atRow:(NSInteger)row forceRefresh:(BOOL)forceRefresh
 {
-    if (self.currentRow != row) {
+    if (self.currentRow != row || forceRefresh) {
         self.imageView.image = nil;
         self.textLabel.text = [self getCellTitle:appItem];
         self.currentRow = row;

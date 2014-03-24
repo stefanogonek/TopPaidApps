@@ -33,8 +33,32 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="maH-sO-9lS"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="hhV-KU-ghD" id="3Qy-2g-0AD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAL-2h-JfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" id="grI-O8-GXg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="xFe-XK-wlN" id="aEW-vu-ZSW"/>
+                    </connections>
+                </searchBar>
+                <searchDisplayController id="hhV-KU-ghD">
+                    <connections>
+                        <outlet property="delegate" destination="xFe-XK-wlN" id="edH-o8-sYc"/>
+                        <outlet property="searchBar" destination="grI-O8-GXg" id="gXI-Aj-NJI"/>
+                        <outlet property="searchContentsController" destination="xFe-XK-wlN" id="WoW-vX-NtX"/>
+                        <outlet property="searchResultsDataSource" destination="xFe-XK-wlN" id="VIH-Mw-kD8"/>
+                        <outlet property="searchResultsDelegate" destination="xFe-XK-wlN" id="WZB-vO-tS8"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="481" y="-401"/>
         </scene>

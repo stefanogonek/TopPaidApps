@@ -14,6 +14,8 @@
 
 @property(nonatomic, retain) AppsFetcher *appsFetcher;
 @property(nonatomic, retain) NSArray *appsList;
+@property(nonatomic, retain) NSArray *filteredAppsList;
+@property(nonatomic, assign) BOOL forceCellsRefresh;
 
 @end
 
@@ -23,6 +25,7 @@
 {
     _appsFetcher.delegate = nil;
     [_appsFetcher release];
+    [_filteredAppsList release];
     [_appsList release];
     [super dealloc];
 }
@@ -32,6 +35,7 @@
     [super viewDidLoad];
     [self addRefreshControl];
     [self fetchAppsList];
+    self.searchDisplayController.displaysSearchBarInNavigationBar = YES;
 }
 
 - (void)addRefreshControl
@@ -58,6 +62,7 @@
 {
     [super viewWillAppear:animated];
     self.title = @"Top Paid Apps";
+    self.filteredAppsList = [[self.appsList copy] autorelease];
 }
 
 
@@ -65,7 +70,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.appsList count];
+    return [self.filteredAppsList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -76,7 +81,9 @@
         appCell = [AppCell appCellWithReuseIdentifier:cellIdentifier];
         appCell.delegate = self;
     }
-    [appCell configureWithAppItem:self.appsList[indexPath.row] atRow:indexPath.row];
+    [appCell configureWithAppItem:self.filteredAppsList[indexPath.row]
+                            atRow:indexPath.row
+                     forceRefresh:self.forceCellsRefresh];
     return appCell;
 }
 
@@ -85,6 +92,7 @@
 - (void)fetcherReturnedWithAppsList:(NSArray *)appsList
 {
     self.appsList = appsList;
+    self.filteredAppsList = [[self.appsList copy] autorelease];
     [self.tableView reloadData];
     [self.refreshControl endRefreshing];
 }
@@ -98,6 +106,31 @@
 
 - (void)appCellNeedsRefresh:(AppCell *)appCell
 {
+    [self.tableView reloadData];
+}
+
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    if (!searchString || searchString.length == 0) {
+        
+        self.filteredAppsList = [[self.appsList copy] autorelease];
+    }
+    else {
+        self.filteredAppsList = [self.appsList filteredArrayUsingPredicate:
+            [NSPredicate predicateWithFormat:@"name contains[cd] %@",searchString]];
+    }
+    
+    self.forceCellsRefresh = YES;
+    [self.tableView reloadData];
+    
+    return YES;
+}
+
+- (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller {
+
+    self.filteredAppsList = [[self.appsList copy] autorelease];
+    self.forceCellsRefresh = NO;
     [self.tableView reloadData];
 }
 

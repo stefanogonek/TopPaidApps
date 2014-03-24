@@ -21,6 +21,6 @@
 
 + (instancetype)appCellWithReuseIdentifier:(NSString *)reuseIdentifier;
 
-- (void)configureWithAppItem:(AppItem *)appItem atRow:(NSInteger)row;
+- (void)configureWithAppItem:(AppItem *)appItem atRow:(NSInteger)row forceRefresh:(BOOL)refresh;
 
 @end
